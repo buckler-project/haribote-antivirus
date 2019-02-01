@@ -3,7 +3,7 @@ from buckler import Buckler
 from pprint import pprint
 
 
-with open('test.py', 'rb') as f: 
+with open(sys.argv[1], 'rb') as f: 
     body = f.read()
     buckler = Buckler()
     has_hit = buckler.scan(body)
